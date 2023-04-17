@@ -1,0 +1,145 @@
+Index: src/components/Header/Header.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React, { useState } from \"react\";\r\nimport { NavLink } from \"react-router-dom\";\r\nimport Logo from \"./../../assets/img/logo.svg\";\r\nimport { CiUser } from \"react-icons/ci\";\r\nimport { useDispatch, useSelector } from \"react-redux\";\r\n\r\nconst Header = () => {\r\n  const [menu, setMenu] = useState(false);\r\n\r\n  const modal = useSelector((state) => state.login);\r\n\r\n  const dispatch = useDispatch();\r\n\r\n  const local = () => {\r\n    let log = JSON.parse(localStorage.getItem(\"login\")) || [];\r\n    dispatch({ type: \"OPEN_LOGIN\", payload: log });\r\n    localStorage.setItem(\"login\", JSON.stringify(true));\r\n  };\r\n\r\n  return (\r\n    <div\r\n      style={{\r\n        display: !modal ? \"block\" : \"none\",\r\n      }}\r\n      id=\"header\"\r\n    >\r\n      <div className=\"container\">\r\n        <div className=\"header--child\">\r\n          <div className=\"header\">\r\n            <div className=\"header--logo\">\r\n              <img\r\n                src={Logo}\r\n                alt=\"logo\"\r\n                style={{\r\n                  width: menu ? \"30%\" : \"88%\",\r\n                }}\r\n              />\r\n              <span\r\n                style={{\r\n                  display: menu ? \"block\" : \"none\",\r\n                }}\r\n              >\r\n                SELF DEVELOPING SCHOOL\r\n              </span>\r\n            </div>\r\n            <nav className=\"header--navbar\">\r\n              <NavLink to={\"/\"}>Главная</NavLink>\r\n              <NavLink to={\"/our-course\"}>Наши курсы</NavLink>\r\n              <NavLink to={\"/about-us\"}>О нас</NavLink>\r\n            </nav>\r\n            <NavLink to={\"/login\"}>\r\n              <div onClick={local} className=\"header--login\">\r\n                <button className=\"header--login__btn\">\r\n                  <CiUser className=\"header--login__btn--icon\" />\r\n                  Войти\r\n                </button>\r\n              </div>\r\n            </NavLink>\r\n            <div onClick={() => setMenu(!menu)} className=\"header--menu\">\r\n              <div className=\"header--menu__parentMenu\">\r\n                <div className={menu ? \"header--menu__parentMenu--one\" : \"\"} />\r\n                <div className={menu ? \"header--menu__parentMenu--tow\" : \"\"} />\r\n                <div\r\n                  className={menu ? \"header--menu__parentMenu--three\" : \"\"}\r\n                />\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <div\r\n            style={{\r\n              display: menu ? \"block\" : \"none\",\r\n            }}\r\n          >\r\n            <div className=\"header--nav\">\r\n              <NavLink to={\"/\"}>Главная</NavLink>\r\n              <NavLink to={\"/our-course\"}>Наши курсы</NavLink>\r\n              <NavLink to={\"/about-us\"}>О нас</NavLink>\r\n              <NavLink to={\"/login\"}>\r\n                <button className=\"header--towBtn\">\r\n                  <CiUser className=\"header--towBtn__icon\" />\r\n                  Войти\r\n                </button>\r\n              </NavLink>\r\n            </div>\r\n          </div>\r\n          <div className=\"header--menu\">\r\n            <div />\r\n            <div />\r\n            <div />\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default Header;\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Header/Header.js b/src/components/Header/Header.js
+--- a/src/components/Header/Header.js	(revision f9e9536a5576a595e9f06d37bd87f64a750b28b5)
++++ b/src/components/Header/Header.js	(date 1681201819598)
+@@ -22,8 +22,7 @@
+       style={{
+         display: !modal ? "block" : "none",
+       }}
+-      id="header"
+-    >
++      id="header">
+       <div className="container">
+         <div className="header--child">
+           <div className="header">
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"1ef89dfc-ea8f-4f01-84d8-3d6711a4abf7\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/assets/img/slider-icon.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/assets/img/slider-icon2.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/pages/TeamBuilding/HeroTeam/HeroTeam.js\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/pages/TeamBuilding/HeroTeam/HeroTeam.scss\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_04_2023_18_22__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_04_2023_18_22__Changes_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/package-lock.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/package-lock.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/package.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/package.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/App.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/App.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/index.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/index.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/index.scss\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/index.scss\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/AboutUs/AboutUs.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/AboutUs/AboutUs.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/AboutUs/AboutUs.scss\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/AboutUs/AboutUs.scss\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/Home/Follow/LearMore/LearnMore.scss\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/Home/Follow/LearMore/LearnMore.scss\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/OurCourses/Courses/Courses.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/OurCourses/Courses/Courses.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/OurCourses/Courses/Courses.scss\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/OurCourses/Courses/Courses.scss\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/OurCourses/Hero/Hero.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/OurCourses/Hero/Hero.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/OurCourses/MasterClasses/MasterClasses.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/OurCourses/MasterClasses/MasterClasses.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/OurCourses/MasterClasses/MasterClasses.scss\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/OurCourses/MasterClasses/MasterClasses.scss\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/OurCourses/Reviews/Reviews.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/OurCourses/Reviews/Reviews.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/OurCourses/Reviews/Reviews.scss\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/OurCourses/Reviews/Reviews.scss\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/TeamBuilding/AboutCourse/AboutCourse.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/TeamBuilding/AboutCourse/AboutCourse.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/TeamBuilding/AboutCourse/AboutCourse.scss\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/TeamBuilding/AboutCourse/AboutCourse.scss\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/TeamBuilding/CourseProgramme/CourseProgramme.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/TeamBuilding/CourseProgramme/CourseProgramme.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/TeamBuilding/Reviews/Reviews.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/TeamBuilding/Reviews/Reviews.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/TeamBuilding/Team/Team.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/TeamBuilding/Team/Team.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/TeamBuilding/TeamBuilding.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/TeamBuilding/TeamBuilding.js\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"JavaScript File\" />\r\n        <option value=\"SCSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"inputdesid\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2O0Gzu9gnhrtAD4StotBYIsCrHd\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"1ef89dfc-ea8f-4f01-84d8-3d6711a4abf7\" name=\"Changes\" comment=\"\" />\r\n      <created>1680690352083</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1680690352083</updated>\r\n      <workItem from=\"1680690353482\" duration=\"3083000\" />\r\n      <workItem from=\"1680698431654\" duration=\"1086000\" />\r\n      <workItem from=\"1680699569764\" duration=\"16000\" />\r\n      <workItem from=\"1680699628467\" duration=\"1976000\" />\r\n      <workItem from=\"1680701748419\" duration=\"2366000\" />\r\n      <workItem from=\"1680709080896\" duration=\"312000\" />\r\n      <workItem from=\"1680759577635\" duration=\"6000\" />\r\n      <workItem from=\"1680774175926\" duration=\"633000\" />\r\n      <workItem from=\"1680780866320\" duration=\"240000\" />\r\n      <workItem from=\"1680799780722\" duration=\"25000\" />\r\n      <workItem from=\"1680799884338\" duration=\"330000\" />\r\n      <workItem from=\"1680800324081\" duration=\"1042000\" />\r\n      <workItem from=\"1680801702397\" duration=\"10000\" />\r\n      <workItem from=\"1680842603316\" duration=\"14221000\" />\r\n      <workItem from=\"1680943851421\" duration=\"2754000\" />\r\n      <workItem from=\"1681039581258\" duration=\"9317000\" />\r\n      <workItem from=\"1681065807483\" duration=\"12061000\" />\r\n      <workItem from=\"1681102231950\" duration=\"5475000\" />\r\n      <workItem from=\"1681108236443\" duration=\"3108000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"add master-class page\">\r\n      <created>1681111752123</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681111752123</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"add master-class page\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"add master-class page\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"javascript\">\r\n          <url>file://$PROJECT_DIR$/src/pages/Home/Follow/Buy/Buy.js</url>\r\n          <line>42</line>\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f9e9536a5576a595e9f06d37bd87f64a750b28b5)
++++ b/.idea/workspace.xml	(date 1681209273702)
+@@ -5,33 +5,15 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="1ef89dfc-ea8f-4f01-84d8-3d6711a4abf7" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/assets/img/slider-icon.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/assets/img/slider-icon2.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/pages/TeamBuilding/HeroTeam/HeroTeam.js" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/pages/TeamBuilding/HeroTeam/HeroTeam.scss" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_04_2023_18_22__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_04_2023_18_22__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_04_2023_17_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_04_2023_17_17__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_04_2023_10_31__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_04_2023_10_31__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_04_2023_13_33__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_04_2023_13_33__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2023_17_22__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2023_17_22__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_04_2023_10_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_04_2023_10_32__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_04_2023_8_39__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_04_2023_8_39__Changes_.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/pages/AboutUs/AboutUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutUs/AboutUs.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/pages/AboutUs/AboutUs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutUs/AboutUs.scss" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Follow/LearMore/LearnMore.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Follow/LearMore/LearnMore.scss" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/pages/OurCourses/Courses/Courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/OurCourses/Courses/Courses.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/pages/OurCourses/Courses/Courses.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/OurCourses/Courses/Courses.scss" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/pages/OurCourses/Hero/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/OurCourses/Hero/Hero.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/pages/OurCourses/MasterClasses/MasterClasses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/OurCourses/MasterClasses/MasterClasses.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/pages/OurCourses/MasterClasses/MasterClasses.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/OurCourses/MasterClasses/MasterClasses.scss" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/pages/OurCourses/Reviews/Reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/OurCourses/Reviews/Reviews.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/pages/OurCourses/Reviews/Reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/OurCourses/Reviews/Reviews.scss" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/pages/TeamBuilding/AboutCourse/AboutCourse.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TeamBuilding/AboutCourse/AboutCourse.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/pages/TeamBuilding/AboutCourse/AboutCourse.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TeamBuilding/AboutCourse/AboutCourse.scss" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/pages/TeamBuilding/CourseProgramme/CourseProgramme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TeamBuilding/CourseProgramme/CourseProgramme.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/pages/TeamBuilding/Reviews/Reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TeamBuilding/Reviews/Reviews.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/pages/TeamBuilding/Team/Team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TeamBuilding/Team/Team.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/pages/TeamBuilding/TeamBuilding.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TeamBuilding/TeamBuilding.js" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -49,7 +31,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="inputdesid" />
++        <entry key="$PROJECT_DIR$" value="master" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -71,12 +53,9 @@
+     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+     &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+@@ -102,21 +81,10 @@
+       <workItem from="1680799884338" duration="330000" />
+       <workItem from="1680800324081" duration="1042000" />
+       <workItem from="1680801702397" duration="10000" />
+-      <workItem from="1680842603316" duration="14221000" />
+-      <workItem from="1680943851421" duration="2754000" />
+-      <workItem from="1681039581258" duration="9317000" />
+-      <workItem from="1681065807483" duration="12061000" />
+-      <workItem from="1681102231950" duration="5475000" />
+-      <workItem from="1681108236443" duration="3108000" />
++      <workItem from="1680842603316" duration="15759000" />
++      <workItem from="1680941341379" duration="5915000" />
++      <workItem from="1681200570876" duration="2474000" />
+     </task>
+-    <task id="LOCAL-00001" summary="add master-class page">
+-      <created>1681111752123</created>
+-      <option name="number" value="00001" />
+-      <option name="presentableId" value="LOCAL-00001" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1681111752123</updated>
+-    </task>
+-    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -143,7 +111,7 @@
+       <breakpoints>
+         <line-breakpoint enabled="true" type="javascript">
+           <url>file://$PROJECT_DIR$/src/pages/Home/Follow/Buy/Buy.js</url>
+-          <line>42</line>
++          <line>44</line>
+           <option name="timeStamp" value="1" />
+         </line-breakpoint>
+       </breakpoints>
+Index: src/pages/OurCourses/Hero/Hero.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\nimport React from 'react';\r\nimport   \"../Hero/Hero.scss\"\r\nimport coffee from \"../../../assets/img/coffe.png\"\r\nimport Book from \"./../../../assets/img/logo.svg\"\r\n\r\nconst Hero = () => {\r\n    return (\r\n        <div id=\"heroOur\">\r\n            <div className=\"container\">\r\n                <div className=\"heroOur\">\r\n                    <img src={Book} alt=\"\" className=\"hero--book1\"/>\r\n                    <img src={Book} alt=\"\" className=\"hero--book2\"/>\r\n                    <img src={Book} alt=\"\" className=\"hero--book3\"/>\r\n                    <div className=\"hero--block\">\r\n                        <div className=\"hero--block__title\">\r\n                            <h1>Наши курсы</h1>\r\n                            <p className=\"hero--block__title--info\">Получайте новые знания, навыки и возможности для эффективной жизни.</p>\r\n                            <div className=\"hero--block__title--btns\">\r\n                                <button className=\"hero--block__title--btns__b1\">Подобрать пакет</button>\r\n                                <button className=\"hero--block__title--btns__b2\">Войти</button>\r\n                            </div>\r\n                        </div>\r\n                        <img src={coffee} alt=\"\"/>\r\n                    </div>\r\n                </div>\r\n                <img src={Book} alt=\"\" className=\"hero--book4\"/>\r\n            </div>\r\n\r\n        </div>\r\n    );\r\n};\r\n\r\nexport default Hero;\r\n\r\n\r\n// <div className=\"hero\">\r\n//     <div className=\"hero--coffee\">\r\n//         <div className=\"hero--coffee__cup\">\r\n//             <h1>Наши курсы</h1>\r\n//             <p>Получайте новые знания, навыки и возможности для эффективной жизни.\r\n//             </p>\r\n//             <div className=\"hero--coffee__cup--btn\">\r\n//                 <Link className=\"hero--coffee__cup--btn__link\" to={\"/learn-more\"}>\r\n//                     <button className=\"hero--coffee__cup--btn__link--left\">Подобрать пакет</button>\r\n//\r\n//                 </Link>\r\n//                 <Link className=\"hero--coffee__cup--btn__link2\">\r\n//                     <button className=\"hero--coffee__cup--btn__link2--right\">Войти</button>\r\n//\r\n//                 </Link>\r\n//             </div>\r\n//         </div>\r\n//         <img src={coffee} alt=\"img\"/>\r\n//     </div>\r\n//     <div className=\"hero--book\">\r\n//         <img src={bottom} className=\"hero--book__bottom\" alt=\"img\"/>\r\n//\r\n//         <img src={last} className=\"hero--book__last\" alt=\"img\"/>\r\n//         <img src={left} className=\"hero--book__left\" alt=\"img\"/>\r\n//         <div>\r\n//\r\n//         </div>\r\n//         <img src={insiade} className=\"hero--book__insaide\" alt=\"img\"/>\r\n{/*    </div>*/}\r\n{/*</div>*/}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pages/OurCourses/Hero/Hero.js b/src/pages/OurCourses/Hero/Hero.js
+--- a/src/pages/OurCourses/Hero/Hero.js	(revision f9e9536a5576a595e9f06d37bd87f64a750b28b5)
++++ b/src/pages/OurCourses/Hero/Hero.js	(date 1681201819654)
+@@ -26,7 +26,6 @@
+                 </div>
+                 <img src={Book} alt="" className="hero--book4"/>
+             </div>
+-
+         </div>
+     );
+ };

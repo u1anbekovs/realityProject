@@ -1,0 +1,234 @@
+
+#aboutCourse{
+  .about{
+    position: relative;
+    &--book1{
+      position: absolute;
+      filter: blur(2px);
+      left: 315px;
+      bottom: 300px;
+      width: 150px;
+      transform: rotate(30deg);
+    }
+    &--book2{
+      position: absolute;
+      filter: blur(1px);
+     left: 1165px;
+      bottom: 30px;
+      width: 170px;
+
+
+    }
+    h1{
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+      color: #FFFFFF;
+      margin: 30px 0;
+    }
+    p{
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 29px;
+      margin: 22px 0;
+      color: #FFFFFF;
+    }
+  }
+}
+@media (max-width: 1440px) {
+  #aboutCourse{
+    .about{
+    }
+  }
+}
+@media (max-width: 1200px) {
+  #aboutCourse{
+    .about{
+      position: relative;
+      &--book2{
+        position: absolute;
+        filter: blur(1px);
+        left: 1030px;
+        bottom: 30px;
+        width: 170px;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  #aboutCourse{
+    .about{
+      position: relative;
+      &--book2{
+        position: absolute;
+        filter: blur(1px);
+        left: 900px;
+        bottom: 30px;
+        width: 170px;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  #aboutCourse{
+    .about{
+      position: relative;
+      &--book1{
+        position: absolute;
+        filter: blur(2px);
+        left: 315px;
+        bottom: 300px;
+        width: 130px;
+        transform: rotate(30deg);
+      }
+
+      &--book2{
+        position: absolute;
+        filter: blur(1px);
+        left: 800px;
+        bottom: 30px;
+        width: 150px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  #aboutCourse .about h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  #aboutCourse .about p {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 18px 0;
+  }
+
+}
+
+@media (max-width: 800px) {
+  #aboutCourse{
+    .about{
+      position: relative;
+      &--book1{
+        position: absolute;
+        filter: blur(2px);
+        left: 315px;
+        bottom: 300px;
+        width: 130px;
+        transform: rotate(30deg);
+      }
+
+      &--book2{
+        position: absolute;
+        filter: blur(1px);
+        left: 700px;
+        bottom: 30px;
+        width: 150px;
+      }
+    }
+  }
+}
+@media (max-width: 470px) {
+  #aboutCourse{
+    .about{
+      position: relative;
+      &--book1{
+        position: absolute;
+        filter: blur(2px);
+        left: 345px;
+        top: 100px;
+        width: 100px;
+        transform: rotate(-30deg);
+      }
+
+      &--book2{
+        position: absolute;
+        filter: blur(1px);
+        left: 330px;
+        bottom: -40px;
+        width: 100px;
+      }
+    }
+  }
+}
+@media (max-width: 430px) {
+  #aboutCourse{
+    .about{
+      position: relative;
+      &--book1{
+        position: absolute;
+        filter: blur(2px);
+        left: 345px;
+        top: 100px;
+        width: 100px;
+        transform: rotate(-30deg);
+      }
+
+      &--book2{
+        position: absolute;
+        filter: blur(1px);
+        left: 330px;
+        bottom: -40px;
+        width: 100px;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  #aboutCourse .about h1 {
+    font-size: 26px;
+    line-height: 6px;
+  }
+  #aboutCourse .about p {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 13px 0;
+  }
+
+}
+@media (max-width: 376px) {
+  #aboutCourse{
+    .about{
+      position: relative;
+      &--book1{
+        position: absolute;
+        filter: blur(2px);
+        left: 280px;
+        top: 100px;
+        width: 100px;
+        transform: rotate(-30deg);
+      }
+
+      &--book2{
+        position: absolute;
+        filter: blur(1px);
+        left: 270px;
+        bottom: -10px;
+        width: 100px;
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  #aboutCourse{
+    .about{
+      position: relative;
+      &--book1{
+        position: absolute;
+        filter: blur(2px);
+        left: 210px;
+        top: 100px;
+        width: 90px;
+        transform: rotate(-30deg);
+      }
+
+      &--book2{
+        position: absolute;
+        filter: blur(1px);
+        left: 200px;
+        bottom: -10px;
+        width: 90px;
+      }
+    }
+  }
+}

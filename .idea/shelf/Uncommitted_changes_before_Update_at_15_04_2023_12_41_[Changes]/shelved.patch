@@ -1,0 +1,856 @@
+Index: src/pages/OurCourses/Hero/Hero.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#heroOur {\r\n  padding-top: 140px;\r\n\r\n  .heroOur {\r\n    position: relative;\r\n    background: rgba(255, 255, 255, 0.1);\r\n    border: 1px solid #FFFFFF;\r\n    backdrop-filter: blur(7px);\r\n    border-radius: 10px;\r\n    z-index: 2;\r\n\r\n    &--block {\r\n      display: flex;\r\n      justify-content: space-between;\r\n      align-items: center;\r\n      width: 94%;\r\n      padding: 50px 80px;\r\n\r\n      &__title {\r\n        h1 {\r\n          font-weight: 600;\r\n          font-size: 40px;\r\n          line-height: 49px;\r\n          color: #FFFFFF;\r\n        }\r\n\r\n        &--info {\r\n          margin: 30px 0;\r\n          width: 550px;\r\n          font-weight: 400;\r\n          font-size: 24px;\r\n          line-height: 29px;\r\n          color: #FFFFFF;\r\n        }\r\n\r\n        &--btns {\r\n          display: flex;\r\n          gap: 18px;\r\n\r\n          &__b1 {\r\n            font-weight: 400;\r\n            font-size: 16px;\r\n            color: #595FEB;\r\n            padding: 10px 24px;\r\n            background: #FFFFFF;\r\n            border-radius: 10px;\r\n          }\r\n\r\n          &__b2 {\r\n            font-weight: 400;\r\n            font-size: 16px;\r\n            color: #FFFFFF;\r\n            background: rgba(255, 255, 255, 0.1);\r\n            border: 1px solid #FFFFFF;\r\n            backdrop-filter: blur(7px);\r\n            border-radius: 10px;\r\n            padding: 10px 24px;\r\n          }\r\n        }\r\n      }\r\n    }\r\n\r\n    &--book1 {\r\n      position: absolute;\r\n      left: 1110px;\r\n      top: -85px;\r\n      filter: blur(2px);\r\n      transform: rotate(28deg);\r\n      width: 47px;\r\n    }\r\n\r\n    &--book2 {\r\n      position: absolute;\r\n      left: 240px;\r\n      filter: blur(3px);\r\n      width: 60px;\r\n      transform: rotate(-40deg);\r\n      bottom: 425px;\r\n    }\r\n\r\n    &--book3 {\r\n      position: absolute;\r\n      filter: blur(1px);\r\n      width: 140px;\r\n      bottom: -85px;\r\n      left: -130px;\r\n      transform: rotate(-5deg);\r\n    }\r\n\r\n    &--book4 {\r\n      position: absolute;\r\n      filter: blur(.8px);\r\n      left: 1120px;\r\n      width: 155px;\r\n      transform: rotate(28deg);\r\n      bottom: 18px;\r\n    }\r\n  }\r\n\r\n  .book4 {\r\n    margin-left: 1104px;\r\n    width: 12%;\r\n    margin-top: -36px;\r\n\r\n  }\r\n\r\n}\r\n\r\n\r\n@media (max-width: 1400px) {\r\n\r\n}\r\n\r\n@media (max-width: 1200px) {\r\n  #heroOur {\r\n    .heroOur {\r\n      &--book1 {\r\n\r\n      }\r\n\r\n      &--book2 {\r\n\r\n      }\r\n\r\n      &--book3 {\r\n\r\n      }\r\n\r\n      &--block {\r\n        &__title {\r\n          &--info {\r\n\r\n          }\r\n\r\n          &--btns {\r\n\r\n          }\r\n\r\n        }\r\n      }\r\n    }\r\n\r\n    .book4 {\r\n      margin-left: 827px;\r\n      width: 142px;\r\n      transform: rotate(42deg);\r\n\r\n    }\r\n  }\r\n}\r\n\r\n@media (max-width: 1024px) {\r\n  #heroOur {\r\n    .heroOur {\r\n      position: relative;\r\n\r\n      &--book1 {\r\n\r\n      }\r\n\r\n      &--book2 {\r\n\r\n      }\r\n\r\n      &--book3 {\r\n        position: absolute;\r\n        left: 1px;\r\n\r\n      }\r\n\r\n      &--block {\r\n        flex-direction: column;\r\n        width: 110%;\r\n\r\n\r\n        img {\r\n          width: 71%;\r\n        }\r\n\r\n        &__title {\r\n          &--info {\r\n\r\n          }\r\n\r\n          &--btns {\r\n\r\n          }\r\n\r\n        }\r\n      }\r\n    }\r\n\r\n    &--book4 {\r\n      position: absolute;\r\n      top: 1px;\r\n      left: 1px;\r\n    }\r\n  }\r\n}\r\n\r\n@media (max-width: 999px) {\r\n  #heroOur {\r\n    .heroOur {\r\n      position: relative;\r\n      left: 1px;\r\n\r\n      &--book1 {\r\n\r\n      }\r\n\r\n      &--book2 {\r\n        position: absolute;\r\n\r\n      }\r\n\r\n      &--book3 {\r\n\r\n      }\r\n\r\n      &--block {\r\n        &__title {\r\n          &--info {\r\n\r\n          }\r\n\r\n          &--btns {\r\n\r\n          }\r\n\r\n        }\r\n      }\r\n    }\r\n\r\n    &--book4 {\r\n\r\n      margin-left: 630px;\r\n\r\n    }\r\n  }\r\n}\r\n\r\n@media (max-width: 992px) {\r\n  #heroOur {\r\n    .heroOur {\r\n      &--book1 {\r\n\r\n      }\r\n\r\n      &--book2 {\r\n\r\n      }\r\n\r\n      &--book3 {\r\n\r\n      }\r\n\r\n      &--block {\r\n        &__title {\r\n          &--info {\r\n\r\n          }\r\n\r\n          &--btns {\r\n\r\n          }\r\n\r\n        }\r\n      }\r\n    }\r\n\r\n    .book4 {\r\n      margin-left: 665px;\r\n      width: 123px;\r\n    }\r\n  }\r\n}\r\n\r\n\r\n@media (max-width: 768px) {\r\n  #heroOur {\r\n    .heroOur {\r\n      &--book1 {\r\n\r\n      }\r\n\r\n      &--book2 {\r\n\r\n      }\r\n\r\n      &--book3 {\r\n\r\n      }\r\n\r\n      &--block {\r\n        &__title {\r\n          &--info {\r\n\r\n          }\r\n\r\n          &--btns {\r\n\r\n          }\r\n\r\n        }\r\n      }\r\n    }\r\n\r\n    .book4 {\r\n      margin-left: 541px;\r\n      width: 131px;\r\n\r\n    }\r\n  }\r\n}\r\n\r\n@media (max-width: 550px) {\r\n  #heroOur {\r\n\r\n    .heroOur {\r\n      &--book1 {\r\n\r\n      }\r\n\r\n      &--book2 {\r\n\r\n      }\r\n\r\n      &--book3 {\r\n\r\n      }\r\n\r\n      &--block {\r\n        &__title {\r\n          &--info {\r\n\r\n          }\r\n\r\n          &--btns {\r\n\r\n          }\r\n\r\n        }\r\n      }\r\n    }\r\n\r\n    .book4 {\r\n      margin-left: 364px;\r\n      width: 116px;\r\n\r\n    }\r\n  }\r\n}\r\n\r\n@media (max-width: 480px) {\r\n  #heroOur {\r\n    .heroOur {\r\n      position: relative;\r\n\r\n      &--book1 {\r\n\r\n      }\r\n\r\n      &--book2 {\r\n\r\n      }\r\n\r\n      &--book3 {\r\n        left: 1px;\r\n        width: 24%;\r\n\r\n\r\n      }\r\n\r\n      &--block {\r\n        &__title {\r\n          h1 {\r\n            font-size: 45px;\r\n            line-height: 49px;\r\n            margin-left: -7px;\r\n          }\r\n\r\n          &--info {\r\n            width: 410px;\r\n            font-weight: 400;\r\n\r\n          }\r\n\r\n          &--btns {\r\n\r\n          }\r\n\r\n        }\r\n      }\r\n    }\r\n\r\n    .book4 {\r\n      margin-left: 318px;\r\n      width: 116px;\r\n\r\n    }\r\n  }\r\n}\r\n\r\n@media (max-width: 400px) {\r\n  #heroOur {\r\n    .heroOur {\r\n      &--book1 {\r\n\r\n      }\r\n\r\n      &--book2 {\r\n\r\n      }\r\n\r\n      &--book3 {\r\n\r\n      }\r\n\r\n      &--block {\r\n        img {\r\n          width: 138%;\r\n        }\r\n\r\n        &__title {\r\n          &--info {\r\n            width: 346px;\r\n            font-weight: 400;\r\n            font-size: 20px;\r\n          }\r\n\r\n          &--btns {\r\n\r\n          }\r\n\r\n        }\r\n      }\r\n    }\r\n\r\n    .book4 {\r\n      margin-left: 242px;\r\n      width: 96px;\r\n\r\n    }\r\n  }\r\n}\r\n\r\n@media (max-width: 378px) {\r\n  #heroOur {\r\n    .heroOur {\r\n      &--book1 {\r\n\r\n      }\r\n\r\n      &--book2 {\r\n\r\n      }\r\n\r\n      &--book3 {\r\n\r\n      }\r\n\r\n      &--block {\r\n        &__title {\r\n          &--info {\r\n\r\n          }\r\n\r\n          &--btns {\r\n\r\n          }\r\n\r\n        }\r\n      }\r\n    }\r\n\r\n    &--book4 {\r\n\r\n    }\r\n  }\r\n}\r\n\r\n@media (max-width: 320px) {\r\n  #heroOur {\r\n    .heroOur {\r\n      &--book1 {\r\n\r\n      }\r\n\r\n      &--book2 {\r\n        position: absolute;\r\n        left: -25px;\r\n        top: 197px;\r\n\r\n\r\n      }\r\n\r\n      &--book3 {\r\n        left: -43px;\r\n        top: 429px;\r\n        width: 24%;\r\n\r\n      }\r\n\r\n      &--block {\r\n        img {\r\n          width: 294px;\r\n          height: 181px;\r\n\r\n        }\r\n\r\n        &__title {\r\n          h1 {\r\n            font-size: 35px;\r\n            line-height: 49px;\r\n            margin-left: 8px;\r\n\r\n          }\r\n\r\n          &--info {\r\n            width: 309px;\r\n            font-weight: 400;\r\n            font-size: 19px;\r\n          }\r\n\r\n          &--btns {\r\n            display: flex;\r\n            flex-direction: column;\r\n\r\n            &__b1 {\r\n              color: #595FEB;\r\n              font-size: 20px;\r\n              line-height: 49px;\r\n              margin-left: 12px;\r\n              width: 260px;\r\n              height: 59px;\r\n            }\r\n\r\n            &__b2 {\r\n              color: #595FEB;\r\n              width: 260px;\r\n              height: 59px;\r\n              margin-left: 6px;\r\n            }\r\n\r\n          }\r\n\r\n        }\r\n      }\r\n    }\r\n\r\n    .book4 {\r\n      margin-left: 224px;\r\n      width: 51px;\r\n      margin-top: 7px;\r\n\r\n    }\r\n  }\r\n}\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pages/OurCourses/Hero/Hero.scss b/src/pages/OurCourses/Hero/Hero.scss
+--- a/src/pages/OurCourses/Hero/Hero.scss	(revision f23d9943c7c4202c57948215064834990255e64b)
++++ b/src/pages/OurCourses/Hero/Hero.scss	(date 1681540879875)
+@@ -556,5 +556,259 @@
+     }
+   }
+ }
++  //adaptaeshion
++
++@media (max-width: 1140px) {
++
++
++}
++@media (max-width: 1200px) {
++#reviewCourse{
++
++}
++
++
++}
++@media (max-width: 1024px) {
++
++}
++@media (max-width: 999px) {
++  .review{
++    .review--title
++
++    &--card {
++      &__card1 {
++
++      }
++
++      p {
++
++      }
++
++      a {
++
++      }
++
++      &--info {
++        h2 {
++
++        }
++
++        &__line {
++
++        }
++
++        h2 {
++
++        }
++      }
++    }
++  }
++
++}
++@media (max-width: 992px) {
++  .review{
++    .review--title
++
++    &--card {
++      &__card1 {
++
++      }
++
++      p {
++
++      }
++
++      a {
++
++      }
++
++      &--info {
++        h2 {
++
++        }
++
++        &__line {
++
++        }
++
++        h2 {
++
++        }
++      }
++    }
++  }
++
++}
++@media (max-width: 800px) {
++  .review{
++    .review--title
++
++    &--card {
++      &__card1 {
++
++      }
++
++      p {
++
++      }
++
++      a {
++
++      }
++
++      &--info {
++        h2 {
++
++        }
++
++        &__line {
++
++        }
++
++        h2 {
++
++        }
++      }
++    }
++  }
++
++}
++@media (max-width: 768px) {
++  .review{
++    .review--title
++
++    &--card {
++      &__card1 {
++
++      }
++
++      p {
++
++      }
++
++      a {
++
++      }
++
++      &--info {
++        h2 {
++
++        }
++
++        &__line {
++
++        }
++
++        h2 {
++
++        }
++      }
++    }
++  }
++
++}
++@media (max-width: 740px) {
++  .review{
++    .review--title
++
++    &--card {
++      &__card1 {
++
++      }
++
++      p {
++
++      }
++
++      a {
++
++      }
++
++      &--info {
++        h2 {
++
++        }
++
++        &__line {
++
++        }
++
++        h2 {
++
++        }
++      }
++    }
++  }
++
++}
++@media (max-width: 1140px) {
++  .review{
++    .review--title
++
++    &--card {
++      &__card1 {
++
++      }
++
++      p {
++
++      }
++
++      a {
++
++      }
++
++      &--info {
++        h2 {
++
++        }
++
++        &__line {
++
++        }
++
++        h2 {
++
++        }
++      }
++    }
++  }
++
++}
++@media (max-width: 1140px) {
++  .review{
++    .review--title
++
++    &--card {
++      &__card1 {
++
++      }
++
++      p {
++
++      }
++
++      a {
++
++      }
++
++      &--info {
++        h2 {
++
++        }
++
++        &__line {
++
++        }
++
++        h2 {
++
++        }
++      }
++    }
++  }
++
++}
+ 
+ 
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"1ef89dfc-ea8f-4f01-84d8-3d6711a4abf7\" name=\"Changes\" comment=\"add master-class page\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_04_2023_17_17__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_04_2023_17_17__Changes_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_04_2023_10_31__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_04_2023_10_31__Changes_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_04_2023_13_33__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_04_2023_13_33__Changes_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2023_17_22__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2023_17_22__Changes_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_04_2023_10_32__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_04_2023_10_32__Changes_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_04_2023_8_39__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_04_2023_8_39__Changes_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/components/Header/Header.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/components/Header/Header.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/Home/Accardeon/openAcc.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/Home/Accardeon/openAcc.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/Home/Hero/Hero.scss\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/Home/Hero/Hero.scss\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/OurCourses/Hero/Hero.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/OurCourses/Hero/Hero.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/OurCourses/Hero/Hero.scss\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/OurCourses/Hero/Hero.scss\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/pages/TeamBuilding/CourseProgramme/CourseProgramme.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/pages/TeamBuilding/CourseProgramme/CourseProgramme.js\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"JavaScript File\" />\r\n        <option value=\"SCSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2O0Gzu9gnhrtAD4StotBYIsCrHd\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"1ef89dfc-ea8f-4f01-84d8-3d6711a4abf7\" name=\"Changes\" comment=\"\" />\r\n      <created>1680690352083</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1680690352083</updated>\r\n      <workItem from=\"1680690353482\" duration=\"3083000\" />\r\n      <workItem from=\"1680698431654\" duration=\"1086000\" />\r\n      <workItem from=\"1680699569764\" duration=\"16000\" />\r\n      <workItem from=\"1680699628467\" duration=\"1976000\" />\r\n      <workItem from=\"1680701748419\" duration=\"2366000\" />\r\n      <workItem from=\"1680709080896\" duration=\"312000\" />\r\n      <workItem from=\"1680759577635\" duration=\"6000\" />\r\n      <workItem from=\"1680774175926\" duration=\"633000\" />\r\n      <workItem from=\"1680780866320\" duration=\"240000\" />\r\n      <workItem from=\"1680799780722\" duration=\"25000\" />\r\n      <workItem from=\"1680799884338\" duration=\"330000\" />\r\n      <workItem from=\"1680800324081\" duration=\"1042000\" />\r\n      <workItem from=\"1680801702397\" duration=\"10000\" />\r\n      <workItem from=\"1680842603316\" duration=\"15759000\" />\r\n      <workItem from=\"1680941341379\" duration=\"5915000\" />\r\n      <workItem from=\"1681200570876\" duration=\"2474000\" />\r\n      <workItem from=\"1681281666459\" duration=\"598000\" />\r\n      <workItem from=\"1681294209715\" duration=\"341000\" />\r\n      <workItem from=\"1681306865799\" duration=\"2070000\" />\r\n      <workItem from=\"1681318326655\" duration=\"11000\" />\r\n      <workItem from=\"1681319068700\" duration=\"507000\" />\r\n      <workItem from=\"1681346620938\" duration=\"9261000\" />\r\n      <workItem from=\"1681363935678\" duration=\"8000\" />\r\n      <workItem from=\"1681368000596\" duration=\"628000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"add master-class page\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"add master-class page\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"javascript\">\r\n          <url>file://$PROJECT_DIR$/src/pages/Home/Follow/Buy/Buy.js</url>\r\n          <line>44</line>\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f23d9943c7c4202c57948215064834990255e64b)
++++ b/.idea/workspace.xml	(date 1681540707699)
+@@ -5,19 +5,11 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="1ef89dfc-ea8f-4f01-84d8-3d6711a4abf7" name="Changes" comment="add master-class page">
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_04_2023_17_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_04_2023_17_17__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_04_2023_10_31__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_04_2023_10_31__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_04_2023_13_33__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_04_2023_13_33__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2023_17_22__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2023_17_22__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_04_2023_10_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_04_2023_10_32__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_04_2023_8_39__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_04_2023_8_39__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_04_2023_14_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_04_2023_14_10__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_04_2023_1_18__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_04_2023_1_18__Changes_.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Accardeon/openAcc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Accardeon/openAcc.js" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/pages/Home/Hero/Hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Hero/Hero.scss" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/pages/OurCourses/Hero/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/OurCourses/Hero/Hero.js" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/pages/OurCourses/Hero/Hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/OurCourses/Hero/Hero.scss" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/pages/TeamBuilding/CourseProgramme/CourseProgramme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TeamBuilding/CourseProgramme/CourseProgramme.js" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -96,6 +88,8 @@
+       <workItem from="1681346620938" duration="9261000" />
+       <workItem from="1681363935678" duration="8000" />
+       <workItem from="1681368000596" duration="628000" />
++      <workItem from="1681464758969" duration="12000" />
++      <workItem from="1681538693561" duration="1978000" />
+     </task>
+     <servers />
+   </component>
+Index: src/pages/Home/Hero/Hero.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#hero {\r\n  padding: 200px 0 120px 0;\r\n  position: relative;\r\n\r\n  .hero {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n\r\n\r\n\r\n\r\n    &--title {\r\n      width: 560px;\r\n\r\n      h1 {\r\n        font-weight: 600;\r\n        font-size: 40px;\r\n        line-height: 49px;\r\n        color: #FFFFFF;\r\n      }\r\n\r\n      p {\r\n        font-weight: 400;\r\n        font-size: 24px;\r\n        line-height: 29px;\r\n        color: #FFFFFF;\r\n        padding: 20px 0;\r\n      }\r\n\r\n      button {\r\n        width: 176px;\r\n        height: 44px;\r\n        background: #FFFFFF;\r\n        border-radius: 10px;\r\n        border: 0;\r\n        font-weight: 400;\r\n        font-size: 16px;\r\n        line-height: 24px;\r\n        color: #595FEB;\r\n      }\r\n    }\r\n\r\n  }\r\n\r\n  .book1 {\r\n    position: absolute;\r\n    top: 107px;\r\n    right: 102px;\r\n\r\n  }\r\n\r\n  .book2 {\r\n    position: absolute;\r\n    top: 200px;\r\n    left: 300px;\r\n  }\r\n\r\n  .book4 {\r\n    position: absolute;\r\n    filter: blur(0.8px);\r\n    left: 1257px;\r\n    width: 152px;\r\n    transform: rotate(28deg);\r\n    bottom: -307px;\r\n  }\r\n}\r\n\r\n\r\n\r\n\r\n@media (max-width: 1440px) {\r\n  #hero {\r\n    .hero {}\r\n  }\r\n}\r\n\r\n@media (max-width: 1200px) {\r\n  #hero {\r\n    .hero {}\r\n  }\r\n}\r\n\r\n@media (max-width: 1024px) {\r\n  #hero {\r\n    .hero {\r\n      &--title {\r\n        h1 {\r\n          font-size: 35px;\r\n        }\r\n\r\n        p {\r\n          font-size: 20px;\r\n        }\r\n      }\r\n\r\n      &--img {\r\n        img {\r\n          width: 380px;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n@media (max-width: 992px) {\r\n  #hero {\r\n    padding: 30px 0;\r\n\r\n    .book4 {\r\n      width: 190px;\r\n    }\r\n\r\n    .book3 {\r\n      width: 80px;\r\n    }\r\n\r\n    .hero {\r\n      &--title {\r\n        h1 {\r\n          font-size: 35px;\r\n        }\r\n\r\n        p {\r\n          font-size: 20px;\r\n        }\r\n      }\r\n\r\n      &--img {\r\n        img {\r\n          width: 380px;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n@media (max-width: 800px) {\r\n  #hero {\r\n    padding: 30px 0;\r\n\r\n    .book4 {\r\n      width: 160px;\r\n    }\r\n\r\n    .book3 {\r\n      width: 65px;\r\n    }\r\n\r\n    .book1 {\r\n      position: absolute;\r\n      right: 40px;\r\n      width: 50px;\r\n    }\r\n\r\n    .book2 {\r\n      width: 90px;\r\n    }\r\n\r\n    .hero {\r\n      &--title {\r\n        h1 {\r\n          font-size: 27px;\r\n          line-height: 39px;\r\n        }\r\n\r\n        p {\r\n          font-size: 16px;\r\n          padding: 12px 0;\r\n        }\r\n\r\n        button {\r\n          width: 160px;\r\n          height: 38px;\r\n          font-size: 16px;\r\n          line-height: 24px;\r\n        }\r\n      }\r\n\r\n      &--img {\r\n        img {\r\n          width: 350px;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n@media (max-width: 470px) {\r\n  #hero {\r\n    padding: 30px 0;\r\n\r\n    .book4 {\r\n      position: absolute;\r\n      right: 30px;\r\n      width: 130px;\r\n    }\r\n\r\n    .book3 {\r\n      position: absolute;\r\n      bottom: -330px;\r\n      width: 50px;\r\n    }\r\n\r\n    .book1 {\r\n      position: absolute;\r\n      right: 0;\r\n      width: 50px;\r\n    }\r\n\r\n    .book2 {\r\n      width: 90px;\r\n    }\r\n\r\n    .hero {\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: space-between;\r\n      flex-wrap: wrap;\r\n\r\n      &--title {\r\n        text-align: center;\r\n\r\n        h1 {\r\n          font-size: 39px;\r\n          line-height: 39px;\r\n        }\r\n\r\n        p {\r\n\r\n          font-size: 20px;\r\n          padding: 20px 0;\r\n        }\r\n\r\n        button {\r\n          width: 170px;\r\n          height: 44px;\r\n          font-size: 16px;\r\n          line-height: 24px;\r\n        }\r\n      }\r\n\r\n      &--img {\r\n        padding: 20px 0;\r\n\r\n        img {\r\n          margin-left: 30px;\r\n          width: 350px;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n@media (max-width: 430px) {\r\n  #hero {\r\n    padding: 30px 0;\r\n\r\n    .book4 {\r\n      position: absolute;\r\n      right: 30px;\r\n      width: 130px;\r\n    }\r\n\r\n    .book3 {\r\n      position: absolute;\r\n      bottom: -330px;\r\n      width: 50px;\r\n    }\r\n\r\n    .book1 {\r\n      position: absolute;\r\n      right: 0;\r\n      width: 50px;\r\n    }\r\n\r\n    .book2 {\r\n      width: 90px;\r\n    }\r\n\r\n    .hero {\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: space-between;\r\n      flex-wrap: wrap;\r\n\r\n      &--title {\r\n        text-align: center;\r\n\r\n        h1 {\r\n          font-size: 36px;\r\n          line-height: 39px;\r\n        }\r\n\r\n        p {\r\n\r\n          font-size: 19px;\r\n          padding: 20px 0;\r\n        }\r\n\r\n        button {\r\n          width: 170px;\r\n          height: 44px;\r\n          font-size: 16px;\r\n          line-height: 24px;\r\n        }\r\n      }\r\n\r\n      &--img {\r\n        padding: 20px 0;\r\n\r\n        img {\r\n          margin-left: 30px;\r\n          width: 330px;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n@media (max-width: 412px) {\r\n  #hero {\r\n    padding: 30px 0;\r\n\r\n    .book4 {\r\n      position: absolute;\r\n      right: 30px;\r\n      width: 130px;\r\n    }\r\n\r\n    .book3 {\r\n      position: absolute;\r\n      bottom: -330px;\r\n      width: 50px;\r\n    }\r\n\r\n    .book1 {\r\n      position: absolute;\r\n      right: 0;\r\n      width: 50px;\r\n    }\r\n\r\n    .book2 {\r\n      width: 90px;\r\n    }\r\n\r\n    .hero {\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: space-between;\r\n      flex-wrap: wrap;\r\n\r\n      &--title {\r\n        text-align: center;\r\n\r\n        h1 {\r\n          font-size: 35px;\r\n          line-height: 39px;\r\n        }\r\n\r\n        p {\r\n\r\n          font-size: 23px;\r\n          padding: 20px 0;\r\n        }\r\n\r\n        button {\r\n          width: 170px;\r\n          height: 44px;\r\n          font-size: 16px;\r\n          line-height: 24px;\r\n        }\r\n      }\r\n\r\n      &--img {\r\n        padding: 20px 0;\r\n\r\n        img {\r\n          margin-left: 30px;\r\n          width: 330px;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n@media (max-width: 400px) {\r\n  #hero {\r\n    padding: 30px 0;\r\n\r\n    .book4 {\r\n      position: absolute;\r\n      right: 30px;\r\n      width: 110px;\r\n    }\r\n\r\n    .book3 {\r\n      position: absolute;\r\n      bottom: -330px;\r\n      width: 45px;\r\n    }\r\n\r\n    .book1 {\r\n      position: absolute;\r\n      right: 0;\r\n      width: 50px;\r\n    }\r\n\r\n    .book2 {\r\n      width: 70px;\r\n    }\r\n\r\n    .hero {\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: space-between;\r\n      flex-wrap: wrap;\r\n\r\n      &--title {\r\n        text-align: center;\r\n\r\n        h1 {\r\n          font-size: 34px;\r\n          line-height: 39px;\r\n        }\r\n\r\n        p {\r\n\r\n          font-size: 22px;\r\n          padding: 20px 0;\r\n        }\r\n\r\n        button {\r\n          width: 170px;\r\n          height: 44px;\r\n          font-size: 16px;\r\n          line-height: 24px;\r\n        }\r\n      }\r\n\r\n      &--img {\r\n        padding: 20px 0;\r\n\r\n        img {\r\n          margin-left: 30px;\r\n          width: 310px;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n@media (max-width: 390px) {\r\n  #hero {\r\n    padding: 30px 0;\r\n\r\n    .book4 {\r\n      position: absolute;\r\n      right: 30px;\r\n      width: 110px;\r\n    }\r\n\r\n    .book3 {\r\n      position: absolute;\r\n      bottom: -330px;\r\n      width: 45px;\r\n    }\r\n\r\n    .book1 {\r\n      position: absolute;\r\n      right: 0;\r\n      width: 50px;\r\n    }\r\n\r\n    .book2 {\r\n      width: 70px;\r\n    }\r\n\r\n    .hero {\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: space-between;\r\n      flex-wrap: wrap;\r\n\r\n      &--title {\r\n        text-align: center;\r\n\r\n        h1 {\r\n          font-size: 33px;\r\n          line-height: 39px;\r\n        }\r\n\r\n        p {\r\n          line-height: 23px;\r\n          font-size: 22px;\r\n          padding: 20px 0;\r\n        }\r\n\r\n        button {\r\n          width: 170px;\r\n          height: 44px;\r\n          font-size: 16px;\r\n          line-height: 24px;\r\n        }\r\n      }\r\n\r\n      &--img {\r\n        padding: 20px 0;\r\n\r\n        img {\r\n          margin-left: 30px;\r\n          width: 310px;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n@media (max-width: 376px) {\r\n  #hero {\r\n    padding: 30px 0;\r\n\r\n    .book4 {\r\n      position: absolute;\r\n      right: 30px;\r\n      width: 110px;\r\n    }\r\n\r\n    .book3 {\r\n      position: absolute;\r\n      bottom: -330px;\r\n      width: 45px;\r\n    }\r\n\r\n    .book1 {\r\n      position: absolute;\r\n      right: 0;\r\n      width: 50px;\r\n    }\r\n\r\n    .book2 {\r\n      width: 70px;\r\n    }\r\n\r\n    .hero {\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: space-between;\r\n      flex-wrap: wrap;\r\n\r\n      &--title {\r\n        text-align: center;\r\n\r\n        h1 {\r\n          font-size: 33px;\r\n          line-height: 39px;\r\n        }\r\n\r\n        p {\r\n          line-height: 23px;\r\n          font-size: 22px;\r\n          padding: 20px 0;\r\n        }\r\n\r\n        button {\r\n          width: 170px;\r\n          height: 44px;\r\n          font-size: 16px;\r\n          line-height: 24px;\r\n        }\r\n      }\r\n\r\n      &--img {\r\n        padding: 20px 0;\r\n\r\n        img {\r\n          margin-left: 30px;\r\n          width: 310px;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n@media (max-width: 320px) {\r\n  #hero {\r\n    padding: 30px 0;\r\n\r\n    .book4 {\r\n      position: absolute;\r\n      right: 30px;\r\n      width: 110px;\r\n    }\r\n\r\n    .book3 {\r\n      position: absolute;\r\n      bottom: -330px;\r\n      width: 45px;\r\n    }\r\n\r\n    .book1 {\r\n      position: absolute;\r\n      right: 0;\r\n      width: 50px;\r\n    }\r\n\r\n    .book2 {\r\n      width: 70px;\r\n    }\r\n\r\n    .hero {\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: space-between;\r\n      flex-wrap: wrap;\r\n\r\n      &--title {\r\n        text-align: center;\r\n\r\n        h1 {\r\n          font-size: 28px;\r\n          line-height: 32px;\r\n        }\r\n\r\n        p {\r\n          line-height: 20px;\r\n          font-size: 18px;\r\n          padding: 15px 0;\r\n        }\r\n\r\n        button {\r\n          width: 150px;\r\n          height: 38px;\r\n          font-size: 16px;\r\n          line-height: 24px;\r\n        }\r\n      }\r\n\r\n      &--img {\r\n        padding: 20px 0;\r\n\r\n        img {\r\n          margin-left: 0;\r\n          width: 300px;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pages/Home/Hero/Hero.scss b/src/pages/Home/Hero/Hero.scss
+--- a/src/pages/Home/Hero/Hero.scss	(revision f23d9943c7c4202c57948215064834990255e64b)
++++ b/src/pages/Home/Hero/Hero.scss	(date 1681370547847)
+@@ -582,6 +582,524 @@
+   }
+ }
+ 
++
++@media (max-width: 1440px) {
++  #hero {
++    .hero {
++
++    }
++  }
++}
++
++@media (max-width: 1200px) {
++  #hero {
++    .hero {
++
++    }
++  }
++}
++
++@media (max-width: 1024px) {
++  #hero {
++    .hero {
++      &--title {
++        h1 {
++          font-size: 35px;
++        }
++
++        p {
++          font-size: 20px;
++        }
++      }
++
++      &--img {
++        img {
++          width: 380px;
++        }
++      }
++    }
++  }
++}
++
++@media (max-width: 992px) {
++  #hero {
++    padding: 30px 0;
++
++    .book4 {
++      width: 190px;
++    }
++
++    .book3 {
++      width: 80px;
++    }
++
++    .hero {
++      &--title {
++        h1 {
++          font-size: 35px;
++        }
++
++        p {
++          font-size: 20px;
++        }
++      }
++
++      &--img {
++        img {
++          width: 380px;
++        }
++      }
++    }
++  }
++}
++
++@media (max-width: 800px) {
++  #hero {
++    padding: 30px 0;
++
++    .book4 {
++      width: 160px;
++    }
++
++    .book3 {
++      width: 65px;
++    }
++
++    .book1 {
++      position: absolute;
++      right: 40px;
++      width: 50px;
++    }
++
++    .book2 {
++      width: 90px;
++    }
++
++    .hero {
++      &--title {
++        h1 {
++          font-size: 27px;
++          line-height: 39px;
++        }
++
++        p {
++          font-size: 16px;
++          padding: 12px 0;
++        }
++
++        button {
++          width: 160px;
++          height: 38px;
++          font-size: 16px;
++          line-height: 24px;
++        }
++      }
++
++      &--img {
++        img {
++          width: 350px;
++        }
++      }
++    }
++  }
++}
++
++@media (max-width: 470px) {
++  #hero {
++    padding: 30px 0;
++
++    .book4 {
++      position: absolute;
++      right: 30px;
++      width: 130px;
++    }
++
++    .book3 {
++      position: absolute;
++      bottom: -330px;
++      width: 50px;
++    }
++
++    .book1 {
++      position: absolute;
++      right: 0;
++      width: 50px;
++    }
++
++    .book2 {
++      width: 90px;
++    }
++
++    .hero {
++      display: flex;
++      align-items: center;
++      justify-content: space-between;
++      flex-wrap: wrap;
++
++      &--title {
++        text-align: center;
++
++        h1 {
++          font-size: 39px;
++          line-height: 39px;
++        }
++
++        p {
++
++          font-size: 20px;
++          padding: 20px 0;
++        }
++
++        button {
++          width: 170px;
++          height: 44px;
++          font-size: 16px;
++          line-height: 24px;
++        }
++      }
++
++      &--img {
++        padding: 20px 0;
++
++        img {
++          margin-left: 30px;
++          width: 350px;
++        }
++      }
++    }
++  }
++}
++
++@media (max-width: 430px) {
++  #hero {
++    padding: 30px 0;
++
++    .book4 {
++      position: absolute;
++      right: 30px;
++      width: 130px;
++    }
++
++    .book3 {
++      position: absolute;
++      bottom: -330px;
++      width: 50px;
++    }
++
++    .book1 {
++      position: absolute;
++      right: 0;
++      width: 50px;
++    }
++
++    .book2 {
++      width: 90px;
++    }
++
++    .hero {
++      display: flex;
++      align-items: center;
++      justify-content: space-between;
++      flex-wrap: wrap;
++
++      &--title {
++        text-align: center;
++
++        h1 {
++          font-size: 36px;
++          line-height: 39px;
++        }
++
++        p {
++
++          font-size: 19px;
++          padding: 20px 0;
++        }
++
++        button {
++          width: 170px;
++          height: 44px;
++          font-size: 16px;
++          line-height: 24px;
++        }
++      }
++
++      &--img {
++        padding: 20px 0;
++
++        img {
++          margin-left: 30px;
++          width: 330px;
++        }
++      }
++    }
++  }
++}
++
++@media (max-width: 412px) {
++  #hero {
++    padding: 30px 0;
++
++    .book4 {
++      position: absolute;
++      right: 30px;
++      width: 130px;
++    }
++
++    .book3 {
++      position: absolute;
++      bottom: -330px;
++      width: 50px;
++    }
++
++    .book1 {
++      position: absolute;
++      right: 0;
++      width: 50px;
++    }
++
++    .book2 {
++      width: 90px;
++    }
++
++    .hero {
++      display: flex;
++      align-items: center;
++      justify-content: space-between;
++      flex-wrap: wrap;
++
++      &--title {
++        text-align: center;
++
++        h1 {
++          font-size: 35px;
++          line-height: 39px;
++        }
++
++        p {
++
++          font-size: 23px;
++          padding: 20px 0;
++        }
++
++        button {
++          width: 170px;
++          height: 44px;
++          font-size: 16px;
++          line-height: 24px;
++        }
++      }
++
++      &--img {
++        padding: 20px 0;
++
++        img {
++          margin-left: 30px;
++          width: 330px;
++        }
++      }
++    }
++  }
++}
++
++@media (max-width: 400px) {
++  #hero {
++    padding: 30px 0;
++
++    .book4 {
++      position: absolute;
++      right: 30px;
++      width: 110px;
++    }
++
++    .book3 {
++      position: absolute;
++      bottom: -330px;
++      width: 45px;
++    }
++
++    .book1 {
++      position: absolute;
++      right: 0;
++      width: 50px;
++    }
++
++    .book2 {
++      width: 70px;
++    }
++
++    .hero {
++      display: flex;
++      align-items: center;
++      justify-content: space-between;
++      flex-wrap: wrap;
++
++      &--title {
++        text-align: center;
++
++        h1 {
++          font-size: 34px;
++          line-height: 39px;
++        }
++
++        p {
++
++          font-size: 22px;
++          padding: 20px 0;
++        }
++
++        button {
++          width: 170px;
++          height: 44px;
++          font-size: 16px;
++          line-height: 24px;
++        }
++      }
++
++      &--img {
++        padding: 20px 0;
++
++        img {
++          margin-left: 30px;
++          width: 310px;
++        }
++      }
++    }
++  }
++}
++
++@media (max-width: 390px) {
++  #hero {
++    padding: 30px 0;
++
++    .book4 {
++      position: absolute;
++      right: 30px;
++      width: 110px;
++    }
++
++    .book3 {
++      position: absolute;
++      bottom: -330px;
++      width: 45px;
++    }
++
++    .book1 {
++      position: absolute;
++      right: 0;
++      width: 50px;
++    }
++
++    .book2 {
++      width: 70px;
++    }
++
++    .hero {
++      display: flex;
++      align-items: center;
++      justify-content: space-between;
++      flex-wrap: wrap;
++
++      &--title {
++        text-align: center;
++
++        h1 {
++          font-size: 33px;
++          line-height: 39px;
++        }
++
++        p {
++          line-height: 23px;
++          font-size: 22px;
++          padding: 20px 0;
++        }
++
++        button {
++          width: 170px;
++          height: 44px;
++          font-size: 16px;
++          line-height: 24px;
++        }
++      }
++
++      &--img {
++        padding: 20px 0;
++
++        img {
++          margin-left: 30px;
++          width: 310px;
++        }
++      }
++    }
++  }
++}
++
++@media (max-width: 376px) {
++  #hero {
++    padding: 30px 0;
++
++    .book4 {
++      position: absolute;
++      right: 30px;
++      width: 110px;
++    }
++
++    .book3 {
++      position: absolute;
++      bottom: -330px;
++      width: 45px;
++    }
++
++    .book1 {
++      position: absolute;
++      right: 0;
++      width: 50px;
++    }
++
++    .book2 {
++      width: 70px;
++    }
++
++    .hero {
++      display: flex;
++      align-items: center;
++      justify-content: space-between;
++      flex-wrap: wrap;
++
++      &--title {
++        text-align: center;
++
++        h1 {
++          font-size: 33px;
++          line-height: 39px;
++        }
++
++        p {
++          line-height: 23px;
++          font-size: 22px;
++          padding: 20px 0;
++        }
++
++        button {
++          width: 170px;
++          height: 44px;
++          font-size: 16px;
++          line-height: 24px;
++        }
++      }
++
++      &--img {
++        padding: 20px 0;
++
++        img {
++          margin-left: 30px;
++          width: 310px;
++        }
++      }
++    }
++  }
++}
++
+ @media (max-width: 320px) {
+   #hero {
+     padding: 30px 0;
+@@ -646,4 +1164,7 @@
+       }
+     }
+   }
+-}
+\ No newline at end of file
++}
++
++
++//

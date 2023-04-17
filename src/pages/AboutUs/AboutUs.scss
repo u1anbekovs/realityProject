@@ -1,0 +1,239 @@
+
+#aboutUs{
+  padding: 210px 0 90px;
+  text-align: center;
+  .aboutUs{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--bookBg1{
+      position: absolute;
+      left: 1100px;
+      top: -95px;
+      filter: blur(2px);
+      transform: rotate(28deg);
+      width: 47px;
+    }
+    &--book2{
+      position: absolute;
+      filter: blur(2px);
+      transform: rotate(-45deg);
+      left: 200px;
+      width: 75px;
+      top: 45px;
+    }
+    &--bgBook{
+      position: absolute;
+      filter: blur(1px);
+      width: 150px;
+      bottom: -85px;
+      left: -130px;
+      transform: rotate(-3deg);
+    }
+
+    h2{
+      font-weight: 500;
+      font-size: 47.4833px;
+      line-height: 58px;
+      color: #FFFFFF;
+    }
+    h4{
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 49px;
+      color: #FFFFFF;
+      margin: 60px 0 45px 0;
+    }
+    p{
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 30px;
+      color: #FFFFFF;
+    }
+  }
+}
+ @media (max-width: 1200px) {
+   #aboutUs .aboutUs--bookBg1 {
+     left: 900px;
+   }
+   #aboutUs .aboutUs h4 {
+     font-size: 38px;
+   }
+ }
+@media (max-width: 1140px) {
+  #aboutUs .aboutUs--bgBook {
+    left: -124px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  #aboutUs .aboutUs h4 {
+    font-size: 29px;
+    margin: 35px 0 20px 0;
+  }
+  #aboutUs .aboutUs p {
+    font-size: 19px;
+  }
+  #aboutUs .aboutUs h2 {
+    font-size: 43px;
+  }
+  #aboutUs .aboutUs--bgBook {
+    width: 140px;
+    left: -108px;
+  }
+  #aboutUs .aboutUs--bookBg1 {
+    left: 801px;
+  }
+}
+
+@media (max-width: 992px) {
+  #aboutUs .aboutUs--bookBg1 {
+    left: 700px;
+    top: -101px;
+  }
+  #aboutUs {
+    padding: 220px 0 100px;
+  }
+  #aboutUs .aboutUs--bgBook {
+    width: 139px;
+    left: -165px;
+    bottom: -90px;
+  }
+}
+
+@media (max-width: 768px) {
+  #aboutUs .aboutUs h2 {
+    font-size: 32px;
+  }
+  #aboutUs .aboutUs h4 {
+    font-size: 23px;
+    margin: 14px 0 10px 0;
+  }
+  #aboutUs .aboutUs p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  #aboutUs .aboutUs--bookBg1 {
+    left: 620px;
+  }
+  #aboutUs .aboutUs--bgBook {
+    width: 112px;
+    left: -82px;
+  }
+  #aboutUs {
+    padding: 205px 0 100px;
+  }
+  #aboutUs .aboutUs--bookBg1 {
+    top: -85px;
+  }
+  #aboutUs .aboutUs--book2 {
+    left: 140px;
+    width: 69px;
+    top: 19px;
+  }
+}
+@media (max-width: 576px) {
+  #aboutUs .aboutUs p {
+    width: 320px;
+  }
+  #aboutUs .aboutUs h2 {
+    width: 400px;
+    font-size: 29px;
+    line-height: 45px;
+  }
+  #aboutUs .aboutUs h4 {
+    width: 350px;
+    margin: 19px 0 20px 0;
+    line-height: 32px;
+    font-size: 21px;
+  }
+  #aboutUs {
+    padding: 145px 0 50px;
+  }
+  #aboutUs .aboutUs--book2 {
+    left: 40px;
+    width: 54px;
+    top: 37px;
+  }
+  #aboutUs .aboutUs--bookBg1 {
+    top: -26px;
+    left: 460px;
+    width: 28px;
+  }
+  #aboutUs .aboutUs--bgBook {
+    width: 91px;
+    left: -66px;
+    bottom: -50px;
+  }
+
+}
+
+@media (max-width: 450px) {
+  #aboutUs .aboutUs--bookBg1 {
+    top: -25px;
+    left: 352px;
+  }
+  #aboutUs .aboutUs--bgBook {
+    width: 65px;
+    left: 336px;
+    filter: blur(2px);
+    bottom: -27px;
+    transform: rotate(21deg);
+  }
+
+}
+@media (max-width: 414px) {
+  #aboutUs .aboutUs--bgBook {
+    left: 290px;
+  }
+  #aboutUs .aboutUs--bookBg1 {
+    top: -20px;
+    left: 327px;
+  }
+  #aboutUs {
+    padding: 140px 0 50px;
+  }
+}
+
+@media (max-width: 390px) {
+  #aboutUs .aboutUs--bookBg1 {
+    top: -29px;
+    left: 305px;
+  }
+  #aboutUs .aboutUs--book2 {
+    transform: rotate(-27deg);
+    width: 44px;
+  }
+  #aboutUs .aboutUs--bgBook {
+    left: 233px;
+  }
+
+}
+@media (max-width: 320px) {
+  #aboutUs .aboutUs h2 {
+    width: 267px;
+    line-height: 38px;
+    font-size: 30px;
+  }
+  #aboutUs .aboutUs h4 {
+    width: 231px;
+    line-height: 33px;
+    font-size: 25px;
+  }
+  #aboutUs .aboutUs--book2 {
+    left: 4px;
+    width: 40px;
+    top: -15px;
+  }
+  #aboutUs {
+    padding: 127px 0 38px;
+  }
+  #aboutUs .aboutUs p {
+    font-size: 18px;
+    line-height: 23px;
+    width: 220px;
+  }
+
+}

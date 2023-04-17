@@ -1,0 +1,454 @@
+#heroTeam {
+  padding: 245px 0 120px 0;
+
+  .hero {
+    position: relative;
+
+    &--youTube {
+      height: 730px;
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__play {
+        width: 144px;
+        height: 80px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        align-items: center;
+        &--icon{
+          color: white;
+          font-size: 60px;
+        }
+      }
+    }
+    &--bgBook {
+      position: absolute;
+      left: 1100px;
+      top: -120px;
+      filter: blur(2px);
+      transform: rotate(28deg);
+      width: 47px;
+    }
+
+    &--pTitle {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+    }
+
+    &--titles {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 73%;
+
+      &__book1 {
+        position: absolute;
+        filter: blur(2px);
+        transform: rotate(-40deg);
+        left: 230px;
+        width: 80px;
+        bottom: 140px;
+
+      }
+
+      &__greatTeam {
+        h1 {
+          font-weight: 600;
+          font-size: 40px;
+          line-height: 49px;
+          color: #FFFFFF;
+          margin: 20px 0;
+        }
+
+        p {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #FFFFFF;
+          width: 600px;
+        }
+      }
+
+      &__insayt {
+        h3 {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 29px;
+          border-bottom: 1px solid white;
+          color: #FFFFFF;
+        }
+
+        p {
+          margin: 10px 0;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    &--btn {
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #595FEB;
+      background: #FFFFFF;
+      border-radius: 5px;
+      padding: 10px 24px;
+      margin: 30px 0;
+    }
+  }
+}
+@media (max-width: 1440px) {
+  #heroTeam{
+    .hero{
+
+    }
+  }
+}
+@media (max-width: 1200px) {
+  #heroTeam{
+    .hero{
+      &--bgBook {
+        position: absolute;
+        left: 950px;
+        top: -120px;
+        filter: blur(2px);
+        transform: rotate(28deg);
+        width: 47px;
+      }
+      &--titles{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        width: 83%;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  #heroTeam {
+    .hero {
+      &--youTube {
+        height: 720px;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__play {
+          width: 144px;
+          height: 80px;
+          background: rgba(0, 0, 0, 0.7);
+          border-radius: 4px;
+          display: flex;
+          justify-content: center;
+          cursor: pointer;
+          align-items: center;
+          &--icon{
+            color: white;
+            font-size: 60px;
+          }
+        }
+      }
+      &--bgBook {
+        position: absolute;
+        left: 860px;
+        top: -120px;
+        filter: blur(2px);
+        transform: rotate(28deg);
+        width: 47px;
+      }
+
+      &--pTitle {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #FFFFFF;
+      }
+
+      &--titles {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 88%;
+
+        &__book1 {
+          position: absolute;
+          filter: blur(2px);
+          transform: rotate(-40deg);
+          left: 230px;
+          width: 80px;
+          bottom: 140px;
+
+        }
+
+        &__greatTeam {
+          h1 {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 49px;
+            color: #FFFFFF;
+            margin: 18px 0;
+          }
+
+          p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+            width: 600px;
+          }
+        }
+
+
+      }
+
+      &--btn {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 24px;
+        color: #595FEB;
+        background: #FFFFFF;
+        border-radius: 5px;
+        padding: 10px 22px;
+        margin: 30px 0;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  #heroTeam {
+    .hero {
+      &--youTube {
+        height: 720px;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__play {
+          width: 144px;
+          height: 80px;
+          background: rgba(0, 0, 0, 0.7);
+          border-radius: 4px;
+          display: flex;
+          justify-content: center;
+          cursor: pointer;
+          align-items: center;
+          &--icon{
+            color: white;
+            font-size: 60px;
+          }
+        }
+      }
+      &--bgBook {
+        position: absolute;
+        left: 780px;
+        top: -120px;
+        filter: blur(2px);
+        transform: rotate(28deg);
+        width: 47px;
+      }
+
+      &--pTitle {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 10px;
+        color: #FFFFFF;
+      }
+
+      &--titles {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+
+        &__book1 {
+          position: absolute;
+          filter: blur(2px);
+          transform: rotate(-40deg);
+          left: 230px;
+          width: 80px;
+          bottom: 140px;
+
+        }
+
+        &__greatTeam {
+          h1 {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 49px;
+            color: #FFFFFF;
+            margin: 18px 0;
+          }
+
+          p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 24px;
+            color: #FFFFFF;
+            width: 500px;
+          }
+        }
+        &__insayt {
+          h3 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 29px;
+            border-bottom: 1px solid white;
+            color: #FFFFFF;
+          }
+
+          p {
+            margin: 10px 0;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: #FFFFFF;
+          }
+        }
+
+      }
+
+      &--btn {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 24px;
+        color: #595FEB;
+        background: #FFFFFF;
+        border-radius: 5px;
+        padding: 10px 22px;
+        margin: 30px 0;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  #heroTeam .hero--youTube {
+    height: 430px;
+    margin-top: 87px;
+  }
+  #heroTeam {
+    padding: 217px 0 120px 0;
+  }
+
+}
+@media (max-width: 576px) {
+  #heroTeam .hero--titles {
+    display: flex;
+    flex-direction: column;
+  }
+  #heroTeam .hero--titles__insayt{
+    margin-left: -300px;
+    margin-top: 29px;
+  }
+  #heroTeam .hero--youTube {
+    height: 388px;
+    margin-top: 72px;
+  }
+  #heroTeam {
+    padding: 160px 0 90px 0;
+  }
+  #heroTeam .hero--titles__greatTeam h1 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  #heroTeam .hero--titles__greatTeam p {
+    width: 100%;
+  }
+  #heroTeam {
+    padding: 170px 0 120px 0;
+  }
+
+}
+@media (max-width: 450px) {
+  #heroTeam .hero--titles__greatTeam p {
+    line-height: 22px;
+    width: 100%;
+    font-size: 15px;
+  }
+  #heroTeam .hero--titles__insayt {
+    margin-left: -215px;
+    margin-top: 21px;
+  }
+  #heroTeam .hero--titles__insayt p {
+    margin: 5px 0;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  #heroTeam {
+    padding: 150px 0 90px 0;
+  }
+  #heroTeam .hero--youTube {
+    height: 371px;
+    margin-top: 72px;
+  }
+}
+@media (max-width: 414px) {
+  #heroTeam .hero--titles__insayt {
+    margin-left: -185px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  #heroTeam .hero--titles__greatTeam p {
+    font-size: 13px;
+  }
+  #heroTeam .hero--titles__greatTeam h1 {
+    font-size: 26px;
+    line-height: 23px;
+  }
+  #heroTeam .hero--btn {
+    font-size: 13px;
+    line-height: 24px;
+    padding: 8px 22px;
+    margin: 21px 0;
+  }
+  #heroTeam .hero--titles__insayt p {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  #heroTeam .hero--titles__insayt h3 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  #heroTeam .hero--youTube {
+    height: 330px;
+  }
+}
+@media (max-width: 375px) {
+  #heroTeam .hero--titles__insayt {
+    margin-left: -167px;
+  }
+
+}
+@media (max-width: 320px) {
+  #heroTeam .hero--titles__insayt {
+    margin-left: -122px;
+  }
+  #heroTeam .hero--youTube {
+    height: 296px;
+    margin-top: 76px;
+  }
+
+}
+

@@ -1,0 +1,248 @@
+
+#mk {
+  padding: 100px 0;
+
+  .mk {
+    position: relative;
+
+    &--cards {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &--title {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 49px;
+      color: #FFFFFF;
+      margin: 20px 0 20px 100px;
+    }
+
+    &--book {
+      position: absolute;
+      filter: blur(1.1px);
+      left: 1185px;
+      width: 140px;
+    }
+
+    &--card {
+      margin: 12px 0;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid #FFFFFF;
+      backdrop-filter: blur(7.5px);
+      border-radius: 10px;
+      width: 372px;
+
+      h3 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;
+      }
+
+      &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px 0 12px 0;
+
+        h4 {
+          font-weight: 500;
+          font-size: 16px;
+          color: #FFFFFF;
+        }
+
+        &--btn {
+          display: flex;
+          gap: 10px;
+
+          button {
+            font-weight: 300;
+            font-size: 16px;
+            color: #FFFFFF;
+            padding: 3px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 0.5px solid #FFFFFF;
+            border-radius: 5px;
+          }
+        }
+      }
+
+      &__imgMk {
+        margin: 10px 0 15px 0;
+      }
+
+      a {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+      }
+
+    }
+
+    &--btnMain {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFFFFF;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid #FFFFFF;
+      border-radius: 10px;
+      padding: 13px 15px;
+      margin: 40px 0;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #mk .mk--card {
+    width: 310px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #mk .mk--card {
+    width: 285px;
+  }
+  #mk .mk--card__info--btn button {
+    font-weight: 200;
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 992px) {
+  #mk .mk--card {
+    width: 240px;
+  }
+  #mk .mk--card h3 {
+    font-size: 19px;
+    line-height: 18px;
+  }
+  #mk .mk--card__info h4 {
+    font-weight: 400;
+    font-size: 13px;
+  }
+  #mk .mk--card__info--btn {
+    gap: 5px;
+  }
+  #mk .mk--card__info--btn button {
+    font-size: 10px;
+  }
+  #mk .mk--btnMain {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 15px;
+    margin: 25px 0;
+  }
+  #mk {
+    padding: 100px 0 0 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  #mk .mk--cards {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  #mk .mk--card {
+    padding: 20px;
+    width: 372px;
+  }
+  #mk .mk--card h3 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  #mk .mk--card__info--btn {
+    gap: 10px;
+  }
+  #mk .mk--card__info h4 {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  #mk .mk--card__info--btn button {
+    font-weight: 300;
+    font-size: 16px;
+  }
+  #mk .mk--title {
+    text-align: center;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 450px) {
+  #mk .mk--card {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  #mk .mk--card {
+    padding: 13px;
+  }
+  #mk .mk--card a {
+    font-size: 13px;
+    line-height: 10px;
+  }
+  #mk .mk--card__imgMk{
+    margin: 5px 0 5px 0;
+  }
+  #mk .mk--title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 320px) {
+  #mk .mk--card h3 {
+    font-size: 19px;
+    line-height: 18px;
+  }
+  #mk .mk--card__info h4 {
+    font-weight: 400;
+    font-size: 13px;
+  }
+  #mk .mk--card__info--btn {
+    gap: 5px;
+  }
+  #mk .mk--card__info--btn button {
+    font-size: 10px;
+  }
+  #mk .mk--btnMain {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 15px;
+    margin: 25px 0;
+  }
+  #mk {
+    padding: 60px 0;
+  }
+  #mk .mk--card {
+    padding: 15px;
+  }
+  #mk .mk--title {
+    font-size: 30px;
+    line-height: 12px;
+  }
+  #mk .mk--card {
+    margin: 8px 0;
+  }
+  #mk .mk--btnMain {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 14px;
+    margin: 16px 0;
+  }
+  #mk .mk--btnMain {
+    line-height: 8px;
+    margin: 13px 0;
+    padding: 13px 8px;
+  }
+
+}
